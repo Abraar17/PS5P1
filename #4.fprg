@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 08:30:01 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswODoyMzoxNCBQTTsyODEw"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswODozMDowMSBQTTsxOzI5MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;name&quot;" newline="True"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <output expression="&quot;cost&quot;" newline="True"/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <input variable="cost"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <if expression="cost&gt;1000">
+                <then>
+                    <assign variable="total" expression="cost+(cost*.1)"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="cost+(cost*.05)"/>
+                </else>
+            </if>
+            <output expression="&quot;name&quot;" newline="True"/>
+            <output expression="name" newline="True"/>
+            <output expression="&quot;cost&quot;" newline="True"/>
+            <output expression="cost" newline="True"/>
+            <output expression="&quot;warranty&quot;" newline="True"/>
+            <output expression="total-cost" newline="True"/>
+            <output expression="&quot;total&quot;" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
