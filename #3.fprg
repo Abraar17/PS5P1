@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 08:22:46 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswODoxMzowMSBQTTsyODA1"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswODoyMjo0NiBQTTsxOzI5MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;enternum&quot;" newline="True"/>
+            <input variable="num"/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <output expression="&quot;entercost&quot;" newline="True"/>
+            <input variable="cost"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="num*cost"/>
+            <declare name="shipping" type="Real" array="False" size=""/>
+            <if expression="total&gt;50">
+                <then>
+                    <assign variable="shipping" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="shipping" expression="25"/>
+                    <assign variable="total" expression="total+shipping"/>
+                </else>
+            </if>
+            <output expression="&quot;total with shipping&quot;" newline="True"/>
+            <output expression="total" newline="True"/>
+            <output expression="&quot;shipping only&quot;" newline="True"/>
+            <output expression="shipping" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
