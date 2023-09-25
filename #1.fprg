@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="abraa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-24 07:58:10 PM"/>
+        <attribute name="created" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswNzozNjozNCBBTTsyODAw"/>
+        <attribute name="edited" value="YWJyYWE7TkVFREZPUlJBU0hFRUQ7MjAyMy0wOS0yNDswNzo1ODoxMCBQTTsxOzI5MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Quant" type="Real" array="False" size=""/>
+            <declare name="amt" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter Quant&quot;" newline="True"/>
+            <input variable="Quant"/>
+            <if expression="quant&gt;=1000">
+                <then>
+                    <assign variable="amt" expression="quant *3.00"/>
+                </then>
+                <else>
+                    <assign variable="amt" expression="quant* 5.00"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
